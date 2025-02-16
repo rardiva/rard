@@ -1,6 +1,112 @@
-
+<!DOCTYPE html>
+<html lang="en-US">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <head>
+                    
   <title>Email Receiver(EmailJS)</title>
   <script src ="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+                    
+         <script type="text/javascript">
+  (function () {
+   emailjs.init( "Your_Public_Key");
+  })();
+</script>
+            
 </head>
             
+
+        <body>
+        <div id ="msgme">
+   <form action="">
+
+       <label for ="mail">Email:</label>
+       <br>
+       <input type ="email" id ="mail">
+       <br><br>
+        <label for ="msg">Message:</label>
+        <br>
+       <textarea id ="msg"></textarea>
+           
+       <br><br>
+       <center><span id ="submit">Send Message</span></center>
+   </form>
+   </div>
+
+                  <style>
+                            
+           #msgme{
+    width:20rem;
+    height:15rem;
+    margin:auto;
+    display:grid;
+    place-content:center;
+    align-content:center;
+    justify-content:center;
+    align-items:center;
+    border:groove;
+}
+#msgme input{
+    margin-top:.5rem;
+    border:transparent ;
+    border-bottom:3px solid blue;
+    outline:none;
+}
+
+#msg{
+    resize:none;
+    border:transparent ;
+    border-bottom:3px solid blue;
+    outline:none;
+    width:12rem;
+}
+#mail{
+    width:12rem;
+}
+#submit{
+    text-align:center;
+    padding:5px;
+    background:#000;
+    color:#fff;
+    
+}
+            
+                  </style>
+
+                  <script>
+                            
+          document.addEventListener("DOMContentLoaded",()=>{
+let mail = document.getElementById("mail")
+let msg = document.getElementById("msg")
+let submit = document.getElementById("submit")
+submit.onclick = ()=>{
+    if(mail.value!=""&&msg.value!=""){
+    var templateParams = {
+  myname:"Your_Name",
+  name: mail.value,
+  message: msg.value
+};
+//emailjs.send(' your service_key','your template id', parameters)
+emailjs.send('service_mgnxqwn', '__ejs-test-mail-service__', templateParams)
+
+  .then(function (response) {
+    console.log('SUCCESS!', response.status, response.text);
+  }, function (error) {
+    console.log('FAILED...', error);
+  })
+  }
+  else{
+      alert("Please fill essential details")
+      //swal("Please fill essential details","","warning")
+      //(for sweetalert library...)
+      
+  }
+}
+
+    
+})
+
+            
+                  </script>
+   </body>
+</html>
