@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Responsive photography portfolio website template</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>  
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+   </head>
+
+   <body class="size-1280 slide-to-right">
+        <a href="index.html"><h1>R A R D I V A</h1></a>
+      
+      <nav class="slide-nav aside-nav">
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About me</a></li>
+           <!--<li><a href="my-photos.html">My photos</a></li>-->
+           <li><a href="services.html">My services</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>      
+      </nav>
+    
+      <div class="slide-content">  
+        <section id="right-content" class="s-12 m-10 l-8 xl-7 xxl-6 right">
+
+              <div class="line">
+                 <h1><span class="orange">My </span><span class="purple">Services</span></h1>
+                 <div class="margin2x">
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img class="pictures" src="img/codeweb.jpg" alt="">
+                          <h2>Website Development & Maintenance</h2>
+                          <p>We design and develop amazing websites for businesses, colleges, companies, photography, tourism or personal blogs. We are committed to maintain and manage the content of websites, ensuring that our clients are interacting with their business partners and effectively marketing their peoducts. We are a young service provider that envisions to designing, developing and managing websites of high standards for our clients and help them achieve their business objectives.</p> 
+                       </div>
+                    </div>
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img class="pictures" src="img/programs.jpg" alt="">
+                          <h2>Leadership Capacity Building Workshop Design</h2>
+                          <p>With many experiences in planning, preparing, presenting and facilitating of capacity building workshops for youth we are offering to work with any association or organization to develop modules and sessions for youth leadership. Our team leader Gerard Ivalaoa is a youth with diverse training and working experience in the Papua New Guinea youth space and is committed to developing programs to empower youths to be leaders.</p> 
+                       </div>
+                    </div>
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img class="pictures" src="img/mc.jpg" alt="">
+                          <h2>MC & Moderator of Events</h2>
+                          <p>Gerard Ivalaoa is a young yet highly effective MC and moderator of events. He is skillful in public speaking, very articulative and eloquently as an MC. He focuses on maintaining the energy of audience throughout events, ensuring that they focused and enjoying every moment. Gerard is humerous speaker, ensuring that the audience are interacting with each and speakers of the event. Gerard has experience in being Master of Ceremony during Hon. James Marape's visit to Unitech Duncanson Hall in 2023 and 2024 Master of Ceremony during the National Mock Youth Parliament at the National Parliament, and also the Master of Ceremony during the Green Diplomacy Week at the Port Moresby Arts Thearter 2024.</p> 
+                       </div>
+                    </div>
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img class="pictures"src="img/cv.jpg" alt="">
+                          <h2>CV Design</h2>
+                          <p>We're committed to creating modern design resume styles for job search. Our fee is a minimum of K10 and we make various designs for our clients.</p> 
+                       </div>
+                    </div>
+                    
+                 </div>
+                 <a class="more-button" href="my-photos.html">My photos</a>
+              </div>
+              
+        </section>
+      </div>
+      
+      <!-- FOOTER -->
+       <footer>
+         <p>Consultancy website of Rardiva</p>
+         <a href="https://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a>
+      </footer>
+      
+      <!-- BACKGROUND CAROUSEL --> 
+           <div id="background-carousel">
+              <div class="owl-carousel owl-theme">
+                 <div class="item" style="background-image: url(img/photo-5.jpg)"></div>
+              </div>
+           </div>
+           
+           
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          var owl = $('#background-carousel .owl-carousel');
+          owl.owlCarousel({
+            nav: false,
+            dots: false,
+            items: 1,
+            loop: true,
+            animateOut: 'fadeOut',
+            autoplay: true,
+            autoplayTimeout: 4000
+          });
+        })
+      </script>
+   </body>
+</html>
